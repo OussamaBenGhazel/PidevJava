@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.pigui.controllers.AfficherClient">
+   <children>
+      <TableView fx:id="tableView" layoutX="54.0" layoutY="100.0" prefHeight="256.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="nomcol" prefWidth="110.0" text="Nom" />
+          <TableColumn fx:id="phonecol" prefWidth="104.0" text="Phone" />
+            <TableColumn fx:id="adressecol" prefWidth="142.0" text="Adresse" />
+            <TableColumn fx:id="emailcol" prefWidth="136.0" text="Email" />
+        </columns>
+      </TableView>
+      <Label layoutX="199.0" layoutY="25.0" text="List des Clients" textAlignment="CENTER">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
